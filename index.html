@@ -1,30 +1,208 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.3">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ferreira Ventures</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 2rem;
+      background: #000;
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    nav a {
+      color: #ccc;
+      text-decoration: none;
+      margin-left: 2rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 6rem 2rem;
+    }
+
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: white;
+      color: black;
+    }
+
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 4rem 2rem;
+      gap: 2rem;
+    }
+
+    .about > div {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .about h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p,
+    .about ul {
+      color: #f5f5f5;
+    }
+
+    .about ul {
+      list-style: none;
+    }
+
+    .about ul li::before {
+      content: "• ";
+      color: #ccc;
+    }
+
+    .contact {
+      padding: 4rem 2rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    input,
+    textarea {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+      padding: 0.75rem;
+      font-size: 1rem;
+      resize: vertical;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
+      color: #aaa;
+    }
+
+    button[type="submit"] {
+      background: transparent;
+      color: white;
+      border: 2px solid white;
+      padding: 0.75rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background: white;
+      color: black;
+    }
+
+    @media (max-width: 768px) {
+      .about {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta charset="UTF-8" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;title&gt;Ferreira Ventures&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>/* Paste the full CSS from earlier here */</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>&lt;!-- Paste the full HTML body from earlier here --&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+  <!-- Header -->
+  <header>
+    <div class="logo">Ferreira Ventures</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Invest in What’s Next.</h1>
+    <p>We build, fund, and grow ideas that shape tomorrow.</p>
+    <button>Contact Us</button>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about">
+    <div>
+      <h2>About Us</h2>
+      <p>Ferreira Ventures is a forward-thinking firm investing in innovation, purpose, and people. We believe in ideas that make a difference.</p>
+    </div>
+    <div>
+      <h2>Our Mission</h2>
+      <ul>
+        <li>Empower creators</li>
+        <li>Invest in innovation</li>
+        <li>Build long-term value</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact">
+    <h2>Get in Touch</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 </body>
 </html>
